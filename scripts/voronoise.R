@@ -34,7 +34,10 @@ for (i in 1:100) {
       show.legend = FALSE
     )
 
-  png(file.path(outdir, paste0("voronoise_", i, ".png")))
+  png(file.path(outdir, paste0("voronoise_", i, ".png")),
+    width = 1000,
+    height = 1000
+  )
   print(p)
   dev.off()
 }
